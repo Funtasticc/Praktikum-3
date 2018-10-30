@@ -10,7 +10,6 @@ int main()
 	cout << "Bitte geben Sie die erste Ziffer ein: ? ";
 	cin >> buchstabe1;
 
-
 	cout << "Bitte geben Sie die zweite Ziffer ein : ? ";
 	cin >> buchstabe2;
 
@@ -27,10 +26,10 @@ int main()
 
 		return 1;
 	}
-	else if(zahl1 != 'q' && zahl2 != 'q')
+	else if (zahl1 != 'q' && zahl2 != 'q')
 	{
-		zahl1 = buchstabe1 - 48;
-		zahl2 = buchstabe2 - 48;
+		zahl1 = buchstabe1 - '0';
+		zahl2 = buchstabe2 - '0';
 
 		summe = zahl1 + zahl2;
 
@@ -39,6 +38,4 @@ int main()
 		system("PAUSE");
 		return 0;
 	}
-
-
 }
